@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="lamp1" cx="50%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#E3B23C" stop-opacity="0.55"/>
+      <stop offset="35%" stop-color="#E3B23C" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0B0A0C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141216"/>
+      <stop offset="100%" stop-color="#0B0A0C"/>
+    </linearGradient>
+    <filter id="grain1">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg1)"/>
+
+  <!-- brick wall texture -->
+  <g opacity="0.5">
+    <g stroke="#2A262C" stroke-width="2">
+      <line x1="0" y1="500" x2="800" y2="500"/>
+      <line x1="0" y1="560" x2="800" y2="560"/>
+      <line x1="0" y1="620" x2="800" y2="620"/>
+      <line x1="0" y1="680" x2="800" y2="680"/>
+      <line x1="0" y1="740" x2="800" y2="740"/>
+      <line x1="0" y1="800" x2="800" y2="800"/>
+      <line x1="60" y1="500" x2="60" y2="560"/>
+      <line x1="220" y1="500" x2="220" y2="560"/>
+      <line x1="380" y1="500" x2="380" y2="560"/>
+      <line x1="540" y1="500" x2="540" y2="560"/>
+      <line x1="700" y1="500" x2="700" y2="560"/>
+      <line x1="140" y1="560" x2="140" y2="620"/>
+      <line x1="300" y1="560" x2="300" y2="620"/>
+      <line x1="460" y1="560" x2="460" y2="620"/>
+      <line x1="620" y1="560" x2="620" y2="620"/>
+      <line x1="60" y1="620" x2="60" y2="680"/>
+      <line x1="220" y1="620" x2="220" y2="680"/>
+      <line x1="380" y1="620" x2="380" y2="680"/>
+      <line x1="540" y1="620" x2="540" y2="680"/>
+      <line x1="700" y1="620" x2="700" y2="680"/>
+      <line x1="140" y1="680" x2="140" y2="740"/>
+      <line x1="300" y1="680" x2="300" y2="740"/>
+      <line x1="460" y1="680" x2="460" y2="740"/>
+      <line x1="620" y1="680" x2="620" y2="740"/>
+    </g>
+  </g>
+
+  <rect width="800" height="800" fill="url(#lamp1)"/>
+
+  <!-- lamp post -->
+  <line x1="400" y1="0" x2="400" y2="150" stroke="#3A3640" stroke-width="6"/>
+  <ellipse cx="400" cy="150" rx="28" ry="10" fill="#E3B23C" opacity="0.9"/>
+
+  <!-- silhouette figure -->
+  <path d="M400 250 C 370 250 355 280 358 320 C 360 350 350 370 340 400 L 335 620 L 365 620 L 375 460 L 385 620 L 460 620 L 445 400 C 460 360 455 300 430 265 C 418 250 410 250 400 250 Z" fill="#050405"/>
+  <circle cx="400" cy="230" r="24" fill="#050405"/>
+
+  <rect width="800" height="800" filter="url(#grain1)"/>
+
+  <text x="60" y="150" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="72" letter-spacing="-2" fill="#F5F1E8">SHADOW</text>
+  <text x="60" y="220" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="72" letter-spacing="-2" fill="#E3B23C">BLOCK</text>
+  <text x="62" y="255" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="20" letter-spacing="6" fill="#8A8590">MIDNIGHT SESSIONS</text>
+</svg>

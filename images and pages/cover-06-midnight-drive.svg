@@ -1,0 +1,52 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#170A22"/>
+      <stop offset="55%" stop-color="#1C0A10"/>
+      <stop offset="100%" stop-color="#0B0A0C"/>
+    </linearGradient>
+    <filter id="blur6">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="grain6">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg6)"/>
+
+  <!-- road -->
+  <polygon points="250,800 550,800 430,300 370,300" fill="#0B0A0C"/>
+  <g stroke="#E3B23C" stroke-width="8" opacity="0.8">
+    <line x1="400" y1="340" x2="400" y2="400"/>
+    <line x1="398" y1="440" x2="398" y2="510"/>
+    <line x1="396" y1="560" x2="396" y2="640"/>
+    <line x1="394" y1="690" x2="394" y2="780"/>
+  </g>
+
+  <!-- brake light streaks -->
+  <g filter="url(#blur6)" opacity="0.85">
+    <ellipse cx="250" cy="620" rx="70" ry="14" fill="#C4302B"/>
+    <ellipse cx="230" cy="700" rx="90" ry="16" fill="#C4302B"/>
+    <ellipse cx="560" cy="600" rx="60" ry="12" fill="#F7D774"/>
+    <ellipse cx="590" cy="690" rx="80" ry="14" fill="#F7D774"/>
+  </g>
+
+  <!-- city glow horizon -->
+  <g filter="url(#blur6)" opacity="0.6">
+    <ellipse cx="400" cy="300" rx="380" ry="60" fill="#7C3AED"/>
+  </g>
+  <g fill="#050405">
+    <rect x="40" y="270" width="50" height="60"/>
+    <rect x="110" y="250" width="40" height="80"/>
+    <rect x="660" y="260" width="45" height="70"/>
+    <rect x="715" y="240" width="35" height="90"/>
+  </g>
+
+  <rect width="800" height="800" filter="url(#grain6)"/>
+
+  <text x="60" y="150" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="70" letter-spacing="-2" fill="#F5F1E8">MIDNIGHT</text>
+  <text x="60" y="218" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="70" letter-spacing="-2" fill="#7C3AED">DRIVE</text>
+  <text x="62" y="252" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="20" letter-spacing="6" fill="#8A8590">NO DESTINATION</text>
+</svg>
