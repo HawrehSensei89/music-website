@@ -11,7 +11,7 @@ lorem iririr erooef or j 3oir ijoirejoiji qw iorjh oiwrji i ri oiwrh rhh oihroih
 
 
 
-![music-website](./images/hero-1920x1080.jpg)
+![music-website](./images%20and%20pages/hero-1920x1080.jpg)
 
 
 telegram: [HawrehSensei](https://t.me/Sofur123)
